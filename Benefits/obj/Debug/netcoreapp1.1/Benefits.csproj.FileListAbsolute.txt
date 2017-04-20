@@ -1,0 +1,9 @@
+C:\Temp\Benefits\Benefits\bin\Debug\netcoreapp1.1\Benefits.deps.json
+C:\Temp\Benefits\Benefits\bin\Debug\netcoreapp1.1\Benefits.runtimeconfig.json
+C:\Temp\Benefits\Benefits\bin\Debug\netcoreapp1.1\Benefits.runtimeconfig.dev.json
+C:\Temp\Benefits\Benefits\bin\Debug\netcoreapp1.1\Benefits.dll
+C:\Temp\Benefits\Benefits\bin\Debug\netcoreapp1.1\Benefits.pdb
+C:\Temp\Benefits\Benefits\obj\Debug\netcoreapp1.1\Benefits.AssemblyInfo.cs
+C:\Temp\Benefits\Benefits\obj\Debug\netcoreapp1.1\Benefits.dll
+C:\Temp\Benefits\Benefits\obj\Debug\netcoreapp1.1\Benefits.pdb
+C:\Temp\Benefits\Benefits\obj\Debug\netcoreapp1.1\Benefits.csprojResolveAssemblyReference.cache

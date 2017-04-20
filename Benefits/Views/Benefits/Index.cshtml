@@ -1,0 +1,135 @@
+﻿@{
+    ViewData["Title"] = "Benefits";
+}
+
+<div class="row" style="margin: 20px 0 0 10px;" ng-app="BenefitsApp" ng-controller="BenefitsController">
+
+    <h1 style="margin: 0 0 0 20px;" ng-cloak>{{greeting}}</h1>
+
+    <div class="col-md-3 content-panel" style="min-height: 750px;">
+        <div style="margin: 0 0 50px 0;">
+            <img src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/user-male-circle-blue-512.png" style="width: 100px;display: block;margin: 0 auto;" />
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+            ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        </p>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-7 content-panel">
+
+            <table class="table table-bordered table-hover">
+
+                <thead>
+
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Birthday</th>
+                        <th>Relation</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr style="height: 55px;" ng-repeat="person in people">
+                        <td><input class="form-control" ng-model="person.firstName" /></td>
+                        <td><input class="form-control" ng-model="person.lastName" /></td>
+                        <td ng-cloak>
+                            {{ person.birthday | date:'MM/dd/yyyy' }}
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </td>
+                        <td>
+                            <div class="dropdown" style="width: 100px;">
+                                <button style="width: 100%;" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    {{ person.relation }}
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#" ng-click="updateRelation(person, 'Employee')">Employee</a></li>
+                                    <li><a href="#" ng-click="updateRelation(person, 'Spouse')">Spouse</a></li>
+                                    <li><a href="#" ng-click="updateRelation(person, 'Dependent')">Dependent</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <a class="btn btn-default btn-primary" ng-click="add()">Add Family Member</a>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-7 content-panel">
+
+                <a class="btn btn-default btn-primary">Calculate Benefit Cost</a>
+
+                <h3>Your Benefits</h3>
+
+                <table class="table table-bordered table-hover">
+
+                    <thead>
+
+                        <tr>
+                            <th>Individual</th>
+                            <th>Cost</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Mark Otto</td>
+                            <td>$1000</td>
+                        </tr>
+                        <tr>
+                            <td>Jacob Thronton</td>
+                            <td>$500</td>
+                        </tr>
+                        <tr>
+                            <td>Larry B</td>
+                            <td>$500</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+                <table>
+
+                    <tr>
+                        <td align="right" style="padding: 5px 15px 0 0;"><strong><i>Your Monthly Cost:</i></strong></td>
+                        <td style="padding: 5px 15px 0 0;">{{ monthlyCost | currency }}</td>
+                    </tr>
+
+                    <tr>
+                        <td align="right" style="padding: 5px 15px 0 0;"><strong><i>Your Annual Cost:</i></strong></td>
+                        <td style="padding: 5px 15px 0 0;">$5000.00</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+@section scripts {
+
+
+}

@@ -1,0 +1,14 @@
+C:\Temp\Benefits\Benefits.Tests\bin\Debug\netcoreapp1.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Temp\Benefits\Benefits.Tests\bin\Debug\netcoreapp1.1\xunit.runner.utility.netstandard15.dll
+C:\Temp\Benefits\Benefits.Tests\bin\Debug\netcoreapp1.1\xunit.runner.reporters.netstandard15.dll
+C:\Temp\Benefits\Benefits.Tests\bin\Debug\netcoreapp1.1\Benefits.Tests.deps.json
+C:\Temp\Benefits\Benefits.Tests\bin\Debug\netcoreapp1.1\Benefits.Tests.runtimeconfig.json
+C:\Temp\Benefits\Benefits.Tests\bin\Debug\netcoreapp1.1\Benefits.Tests.runtimeconfig.dev.json
+C:\Temp\Benefits\Benefits.Tests\bin\Debug\netcoreapp1.1\Benefits.Tests.dll
+C:\Temp\Benefits\Benefits.Tests\bin\Debug\netcoreapp1.1\Benefits.Tests.pdb
+C:\Temp\Benefits\Benefits.Tests\bin\Debug\netcoreapp1.1\Benefits.dll
+C:\Temp\Benefits\Benefits.Tests\bin\Debug\netcoreapp1.1\Benefits.pdb
+C:\Temp\Benefits\Benefits.Tests\obj\Debug\netcoreapp1.1\Benefits.Tests.csprojResolveAssemblyReference.cache
+C:\Temp\Benefits\Benefits.Tests\obj\Debug\netcoreapp1.1\Benefits.Tests.AssemblyInfo.cs
+C:\Temp\Benefits\Benefits.Tests\obj\Debug\netcoreapp1.1\Benefits.Tests.dll
+C:\Temp\Benefits\Benefits.Tests\obj\Debug\netcoreapp1.1\Benefits.Tests.pdb
