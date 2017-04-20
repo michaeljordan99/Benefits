@@ -399,6 +399,10 @@ textarea {
     margin: 10px;
 }
 
+.container-benefits {
+    margin: 20px 0 0 10px;
+}
+
 .container-main-content {
     background-color: #eaebed;
 }
@@ -413,4 +417,50 @@ footer {
     margin-left: 350px;
     padding: 10px;
     color: gray;
+}
+
+h1 {
+    margin: 0 0 0 20px;
+}
+
+h1, .cost-footer {
+    color: #7c7d7f;
+}
+
+.cost-footer, .cost-footer-amount {
+    padding: 5px 15px 0 0;
+}
+
+.cost-footer-amount {
+    font-weight: bold;
+}
+
+img.avatar {
+    width: 100px;display: block;margin: 0 auto;
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+    display: none !important;
+}
+
+/* Animate */
+.animate-show,
+.animate-hide {
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+.animate-show.ng-hide-remove,
+.animate-hide.ng-hide-add.ng-hide-add-active {
+opacity: 0;
+display: block !important;
+}
+
+.animate-hide.ng-hide-add,
+.animate-show.ng-hide-remove.ng-hide-remove-active {
+    opacity: 1;
+    display: block !important;
 }
