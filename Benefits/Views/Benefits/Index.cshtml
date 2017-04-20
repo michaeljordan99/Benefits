@@ -44,8 +44,8 @@
                 <tbody>
 
                     <tr ng-repeat="person in people" ng-cloak>
-                        <td><input class="form-control" ng-model="person.firstName" /></td>
-                        <td><input class="form-control" ng-model="person.lastName" /></td>
+                        <td><input class="form-control" ng-model="person.firstName" required /></td>
+                        <td><input class="form-control" ng-model="person.lastName" required /></td>
                         <td width="125px;">
                             {{ person.birthday | date:'MM/dd/yyyy' }}
                             <span class="glyphicon glyphicon-calendar" onclick="alert('Not enabled');"></span>

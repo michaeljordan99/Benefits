@@ -7,6 +7,7 @@
         $scope.annualCost = 0;
         $scope.paycheckCost = 0;
         $scope.annualSalaryAfterDeductions = 0;
+        $scope.isFormValid = true;
 
         $scope.init = function () {
 
@@ -38,6 +39,8 @@
 
         $scope.calculate = function () {
 
+            if (!$scope.isFormValid) return;
+
             $scope.annualCost = 0;
             $scope.monthlyCost = 0;
             $scope.paycheckCost = 0;
@@ -61,14 +64,14 @@
         };
 
         $scope.isValid = function () {
-            var isValid = true;
+            $scope.isFormValid = true;
             angular.forEach($scope.people, function (person, key) {
                 if (person.firstName === undefined || person.lastName === undefined || person.relation.toLowerCase() === 'select') {
-                    isValid = false;
+                    $scope.isFormValid = false;
                     return;
                 }
             });
-            return isValid;
+            return $scope.isFormValid;
         };
 
         $scope.init();
