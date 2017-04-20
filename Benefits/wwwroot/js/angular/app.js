@@ -1,5 +1,5 @@
 ﻿angular.module('BenefitsApp', ['ngAnimate'])
-    .controller('BenefitsController', function ($scope, $http) {
+    .controller('BenefitsController', function ($scope, $http, $window) {
 
         $scope.people = null;
         $scope.peopleCosts = null;
@@ -25,8 +25,15 @@
         };
 
         $scope.remove = function (index) {
-            $scope.people.splice(index, 1);
-            if ($scope.peopleCosts !== null) $scope.calculate();
+
+            var user = $scope.people[index];
+
+            var deleteUser = $window.confirm('Are you sure you want to remove ' + user.firstName + '?');
+
+            if (deleteUser) {
+                $scope.people.splice(index, 1);
+                if ($scope.peopleCosts !== null) $scope.calculate();
+            }
         };
 
         $scope.calculate = function () {

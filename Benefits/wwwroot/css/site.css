@@ -419,11 +419,15 @@ footer {
     color: gray;
 }
 
-h1 {
+.table-bordered > thead > tr > th {
+    background-color: #f4f6f9;
+}
+
+h2 {
     margin: 0 0 0 20px;
 }
 
-h1, .cost-footer {
+h2, .cost-footer {
     color: #7c7d7f;
 }
 

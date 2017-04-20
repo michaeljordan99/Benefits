@@ -19,7 +19,6 @@ namespace Benefits.Api
         {
             var people = _peopleRepository.Get();
 
-            //return Json(people);
             return new OkObjectResult(people);
         }
     }
