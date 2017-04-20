@@ -9,7 +9,7 @@ namespace Benefits1.Tests
         [Fact]
         public void BenefitsViewTest()
         {
-            var controller = new PeopleApiController();
+            var controller = new BenefitsController();
 
             var result = controller.Index();
 

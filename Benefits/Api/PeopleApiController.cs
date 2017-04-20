@@ -1,28 +1,26 @@
-﻿using Benefits.Models;
+﻿using Benefits.Data;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
 
 namespace Benefits.Api
 {
     [Route("api/[controller]")]
     public class PeopleController : Controller
     {
+        private readonly IPeopleRepository _peopleRepository;
+
+        public PeopleController(IPeopleRepository peopleRepository)
+        {
+            _peopleRepository = peopleRepository;
+        }
+
         // GET: api/people
         [HttpGet]
-        public JsonResult Get()
+        public IActionResult Get()
         {
-            var people = new List<Person>()
-            {
-                new Person() {
-                    FirstName = "Max",
-                    LastName = "Otto",
-                    Birthday = DateTime.Parse("5/11/1980"),
-                    Relation = "Employee"
-                }
-            };
+            var people = _peopleRepository.Get();
 
-            return Json(people);
+            //return Json(people);
+            return new OkObjectResult(people);
         }
     }
 }
