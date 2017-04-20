@@ -29,7 +29,7 @@
 
             var user = $scope.people[index];
 
-            var deleteUser = $window.confirm('Are you sure you want to remove ' + user.firstName + '?');
+            var deleteUser = $window.confirm('Are you sure you want to remove ' + (user.firstName ? user.firstName : 'this person') + '?');
 
             if (deleteUser) {
                 $scope.people.splice(index, 1);
